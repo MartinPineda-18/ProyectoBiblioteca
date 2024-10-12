@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Usuario {
@@ -9,10 +10,10 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(String nombre, String cedula, List<Libro> librosPrestados) {
+    public Usuario(String nombre, String cedula) {
         this.nombre = nombre;
         this.cedula = cedula;
-        this.librosPrestados = librosPrestados;
+        this.librosPrestados = new ArrayList<>();
     }
 
     public String getNombre() {
